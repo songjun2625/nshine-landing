@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>N Shine Clinic · Cheongdam, Seoul · International Patients</title>
+<meta name="description" content="N Shine Clinic Seoul — diagnosis-led aesthetic medicine. Choose your language: 中文(简体) / 中文(繁體) / English." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500&family=Noto+Serif+SC:wght@500&family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
+    background:#fbf8f3;color:#2a2520;
+    min-height:100vh;display:flex;align-items:center;justify-content:center;
+    padding:40px 20px;-webkit-font-smoothing:antialiased;
+    background:
+      radial-gradient(48% 40% at 90% 10%,rgba(184,153,104,.16),transparent 70%),
+      radial-gradient(48% 50% at -5% 100%,rgba(237,228,210,.8),transparent 60%),
+      #fbf8f3;
+  }
+  .pick{max-width:920px;width:100%;text-align:center}
+  .brand{font-family:"Cormorant Garamond",serif;font-size:32px;letter-spacing:.32em;color:#8a7146;margin-bottom:6px;font-weight:500}
+  .brand small{display:block;font-size:11px;letter-spacing:.4em;color:#7a7065;margin-top:8px;font-family:"Inter",sans-serif;font-weight:400}
+  h1{font-family:"Cormorant Garamond",serif;font-size:54px;line-height:1.15;font-weight:400;margin:48px 0 16px;letter-spacing:-.01em}
+  h1 em{font-style:italic;color:#8a7146}
+  p.sub{color:#7a7065;font-size:15px;max-width:520px;margin:0 auto 56px;line-height:1.7}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:38px}}
+  .card{
+    display:block;padding:36px 28px;border:1px solid rgba(42,37,32,.1);
+    background:#fff;transition:.25s;
+    text-decoration:none;color:inherit;
+  }
+  .card:hover{border-color:#b89968;background:#fff;transform:translateY(-4px);box-shadow:0 12px 30px -16px rgba(138,113,70,.18)}
+  .card .flag{font-size:38px;margin-bottom:18px;display:block}
+  .card h3{font-size:22px;margin-bottom:8px;letter-spacing:.02em;font-weight:500}
+  .zh-cn h3{font-family:"Noto Serif SC",serif}
+  .zh-tw h3{font-family:"Noto Serif TC",serif}
+  .en h3{font-family:"Cormorant Garamond",serif;font-style:italic}
+  .card .region{font-size:11px;letter-spacing:.25em;color:#8a7146;text-transform:uppercase;margin-bottom:18px;font-weight:500}
+  .card .arrow{display:inline-block;margin-top:22px;font-size:13px;color:#8a7146;letter-spacing:.18em;text-transform:uppercase}
+  .foot{margin-top:64px;font-size:11px;letter-spacing:.2em;color:#9d9081;text-transform:uppercase}
+  .foot a{color:#7a7065;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="pick">
+  <div class="brand">N · SHINE CLINIC<small>CHEONGDAM · SEOUL</small></div>
+  <h1>Choose your <em>language</em>.</h1>
+  <p class="sub">韩国清潭ENSHINE医院 · 韓國清潭ENSHINE診所 · N Shine Clinic Seoul — international patient landing</p>
+
+  <div class="grid">
+    <a class="card zh-cn" href="index-zh-CN.html">
+      <span class="flag">🇨🇳</span>
+      <div class="region">中国大陆 / Mainland</div>
+      <h3>简体中文</h3>
+      <span class="arrow">进入 →</span>
+    </a>
+    <a class="card zh-tw" href="index-zh-TW.html">
+      <span class="flag">🇹🇼</span>
+      <div class="region">台灣 · 香港</div>
+      <h3>繁體中文</h3>
+      <span class="arrow">進入 →</span>
+    </a>
+    <a class="card en" href="index-en.html">
+      <span class="flag">🇺🇸</span>
+      <div class="region">North America</div>
+      <h3>English</h3>
+      <span class="arrow">Enter →</span>
+    </a>
+  </div>
+
+  <div class="foot">
+    Marketing partner · <a href="#">PortZone</a>
+  </div>
+</div>
+</body>
+</html>

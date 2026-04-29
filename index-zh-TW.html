@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>清潭ENSHINE醫美診所 · 韓國首爾江南院長親診・客製化診斷 | 台灣旅醫VIP通道</title>
+<meta name="description" content="韓國首爾清潭洞ENSHINE診所 · 趙鎮亨院長親診。Ulthera音波・Thermage FLX・Potenza・Rejuran・幹細胞抗老。LINE中文1對1。" />
+<meta property="og:title" content="清潭ENSHINE · 韓國院長親診抗老" />
+<meta property="og:description" content="清潭ENSHINE · 院長親診・客製方案・LINE VIP預約" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbf8f3;
+    --bg-soft:#f3ede2;
+    --bg-warm:#ede4d2;
+    --ink:#2a2520;
+    --ink-soft:#7a7065;
+    --gold:#b89968;
+    --gold-soft:#d4b988;
+    --gold-deep:#8a7146;
+    --line:rgba(42,37,32,.08);
+    --shadow-soft:0 12px 30px -16px rgba(138,113,70,.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    background:var(--bg);color:var(--ink);
+    line-height:1.8;-webkit-font-smoothing:antialiased;font-weight:300;
+  }
+  h1,h2,h3{font-family:"Noto Serif TC",serif;font-weight:500;letter-spacing:.01em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+
+  .topbar{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(16px);background:rgba(251,248,243,.85);border-bottom:1px solid var(--line)}
+  .topbar-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:1240px;margin:0 auto}
+  .brand{font-family:"Cormorant Garamond",serif;font-size:24px;letter-spacing:.32em;font-weight:500;color:var(--gold-deep)}
+  .brand small{display:block;font-size:9px;letter-spacing:.4em;color:var(--ink-soft);margin-top:2px;font-family:"Noto Sans TC",sans-serif;font-weight:400}
+  .topbar nav{display:flex;gap:28px;font-size:13px;color:var(--ink-soft);letter-spacing:.05em}
+  .topbar nav a:hover{color:var(--gold-deep)}
+  .topbar .cta{background:#06c755;color:#fff;padding:10px 22px;border-radius:0;font-weight:500;font-size:12px;letter-spacing:.18em;display:inline-flex;align-items:center;gap:6px}
+  @media(max-width:760px){.topbar nav{display:none}}
+
+  .hero{
+    min-height:100vh;padding:160px 0 120px;position:relative;overflow:hidden;
+    background:
+      radial-gradient(48% 40% at 90% 10%,rgba(184,153,104,.16),transparent 70%),
+      radial-gradient(48% 50% at -5% 100%,rgba(237,228,210,.8),transparent 60%),
+      var(--bg);
+  }
+  .hero-inner{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+  @media(max-width:880px){.hero-inner{grid-template-columns:1fr;gap:48px}}
+  .eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.35em;color:var(--gold-deep);text-transform:uppercase;margin-bottom:32px;font-weight:500}
+  .eyebrow::before{content:"";width:36px;height:1px;background:var(--gold)}
+  .hero h1{font-size:62px;line-height:1.2;margin-bottom:32px;color:var(--ink);font-weight:500}
+  .hero h1 em{font-style:normal;color:var(--gold-deep);font-family:"Cormorant Garamond",serif;font-weight:500}
+  .hero p.lede{font-size:17px;color:var(--ink-soft);max-width:520px;margin-bottom:44px;line-height:1.85}
+  .hero-stats{display:flex;gap:48px;margin-bottom:48px;flex-wrap:wrap}
+  .hero-stats strong{display:block;font-family:"Cormorant Garamond",serif;font-size:36px;color:var(--gold-deep);font-weight:500;line-height:1}
+  .hero-stats span{font-size:11px;color:var(--ink-soft);letter-spacing:.18em;text-transform:uppercase;margin-top:10px;display:block}
+  .btn-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:18px 32px;font-size:13px;font-weight:500;letter-spacing:.18em;transition:.25s;border-radius:0}
+  .btn-primary{background:var(--ink);color:#fff;border:1px solid var(--ink)}
+  .btn-primary:hover{background:var(--gold-deep);border-color:var(--gold-deep)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+  .btn-line{background:#06c755;color:#fff;border:1px solid #06c755}
+  .btn-line:hover{background:#05a847;border-color:#05a847}
+
+  .hero-card{
+    aspect-ratio:4/5;position:relative;overflow:hidden;
+    background:linear-gradient(180deg,#f3ebd9 0%,#e2d2b3 60%,#c9b491 100%);
+  }
+  .hero-card::after{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(45% 30% at 30% 25%,rgba(255,255,255,.65),transparent 70%),
+      radial-gradient(60% 50% at 70% 90%,rgba(184,153,104,.35),transparent 70%);
+  }
+  .hero-card-body{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:48px;z-index:2;color:var(--ink)}
+  .hero-card-body small{letter-spacing:.3em;font-size:10px;margin-bottom:14px;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+  .hero-card-body h3{font-size:30px;line-height:1.4;margin-bottom:12px;font-weight:500}
+  .hero-card-body p{font-size:14px;color:#5a4f42}
+
+  section{padding:140px 0;position:relative}
+  .sec-head{text-align:center;margin-bottom:88px}
+  .sec-head .eyebrow{justify-content:center}
+  .sec-head h2{font-size:50px;line-height:1.25;margin-bottom:20px;font-weight:500}
+  .sec-head h2 em{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold-deep);font-weight:500}
+  .sec-head p{color:var(--ink-soft);max-width:600px;margin:0 auto;font-size:15px}
+
+  .doctor{background:#fff}
+  .doctor-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+  @media(max-width:880px){.doctor-grid{grid-template-columns:1fr;gap:48px}}
+  .doctor-img{aspect-ratio:3/4;position:relative;overflow:hidden;background:linear-gradient(180deg,#ede4d2 0%,#d4c4a3 100%)}
+  .doctor-img::after{content:"";position:absolute;inset:0;background:radial-gradient(50% 40% at 50% 30%,rgba(255,255,255,.4),transparent 70%)}
+  .doctor-img-label{position:absolute;bottom:32px;left:32px;color:var(--ink);z-index:2}
+  .doctor-img-label small{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+  .doctor-img-label h4{font-family:"Noto Serif TC",serif;font-size:28px;font-weight:500;margin-top:6px}
+  .doctor-info h3{font-size:42px;margin-bottom:20px;line-height:1.25;font-weight:500}
+  .doctor-info h3 em{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold-deep)}
+  .doctor-info > p{color:var(--ink-soft);font-size:15px;margin-bottom:28px;line-height:1.85}
+  .doctor-cv{display:grid;gap:14px;padding-top:24px;border-top:1px solid var(--line)}
+  .doctor-cv li{list-style:none;display:flex;gap:16px;font-size:14px;color:var(--ink-soft)}
+  .doctor-cv li::before{content:"—";color:var(--gold);flex-shrink:0}
+
+  .why{background:var(--bg-soft)}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  @media(max-width:880px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.why-grid{grid-template-columns:1fr}}
+  .why-card{padding:48px 32px;border-right:1px solid var(--line);transition:.3s;background:#fff}
+  .why-card:last-child{border-right:none}
+  @media(max-width:880px){.why-card:nth-child(2){border-right:none}.why-card:nth-child(1),.why-card:nth-child(2){border-bottom:1px solid var(--line)}}
+  .why-card:hover{background:var(--bg-warm)}
+  .why-num{font-family:"Cormorant Garamond",serif;font-size:14px;color:var(--gold-deep);letter-spacing:.3em;margin-bottom:24px;font-style:italic}
+  .why-card h3{font-size:20px;margin-bottom:14px;font-weight:500;color:var(--ink)}
+  .why-card p{font-size:14px;color:var(--ink-soft);line-height:1.8}
+
+  .treat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  @media(max-width:1080px){.treat-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:880px){.treat-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.treat-grid{grid-template-columns:1fr}}
+  .treat-card{background:#fff;transition:.3s;display:flex;flex-direction:column;border:1px solid var(--line)}
+  .treat-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:var(--shadow-soft)}
+  .treat-img{height:180px;position:relative;overflow:hidden}
+  .treat-img.t1{background:linear-gradient(135deg,#f0e6d3,#d8c5a2)}
+  .treat-img.t2{background:linear-gradient(135deg,#ece2cc,#cdba94)}
+  .treat-img.t3{background:linear-gradient(135deg,#e8dcc4,#c8b58e)}
+  .treat-img.t4{background:linear-gradient(135deg,#e2d6bc,#bea884)}
+  .treat-img.t5{background:linear-gradient(135deg,#ede3cc,#d2bf99)}
+  .treat-img.t6{background:linear-gradient(135deg,#e6d9bf,#c4af86)}
+  .treat-img.t7{background:linear-gradient(135deg,#ebe0c8,#cab48a)}
+  .treat-img.t8{background:linear-gradient(135deg,#e3d5b8,#bea984)}
+  .treat-img::after{content:"";position:absolute;inset:0;background:radial-gradient(50% 50% at 30% 30%,rgba(255,255,255,.5),transparent 60%)}
+  .treat-tag{position:absolute;top:14px;left:14px;background:#fff;color:var(--gold-deep);font-size:10px;letter-spacing:.2em;padding:5px 10px;z-index:2;text-transform:uppercase;font-weight:500;border:1px solid var(--gold)}
+  .treat-body{padding:24px;flex:1;display:flex;flex-direction:column}
+  .treat-body h3{font-size:20px;margin-bottom:4px;font-weight:500;color:var(--ink)}
+  .treat-body .sub{font-size:10px;color:var(--gold-deep);letter-spacing:.25em;text-transform:uppercase;margin-bottom:14px;font-weight:500}
+  .treat-body p{font-size:13px;color:var(--ink-soft);margin-bottom:18px;flex:1;line-height:1.7}
+  .treat-meta{display:flex;gap:14px;font-size:11px;color:var(--ink-soft);padding-top:14px;border-top:1px solid var(--line)}
+  .treat-meta strong{color:var(--ink);display:block;margin-bottom:2px;font-size:12px}
+
+  .process{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-warm) 100%)}
+  .step-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+  @media(max-width:880px){.step-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.step-grid{grid-template-columns:1fr}}
+  .step{padding:36px 28px;background:#fff;border:1px solid var(--line)}
+  .step-num{font-family:"Cormorant Garamond",serif;font-size:48px;color:var(--gold);font-weight:500;margin-bottom:14px;line-height:1;font-style:italic}
+  .step h3{font-size:18px;margin-bottom:10px;font-weight:500}
+  .step p{font-size:13px;color:var(--ink-soft);line-height:1.7}
+
+  .trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  @media(max-width:880px){.trust-row{grid-template-columns:repeat(2,1fr)}}
+  .trust-item{padding:48px 24px;border-right:1px solid var(--line)}
+  .trust-item:last-child{border-right:none}
+  @media(max-width:880px){.trust-item:nth-child(2){border-right:none}.trust-item:nth-child(1),.trust-item:nth-child(2){border-bottom:1px solid var(--line)}}
+  .trust-item strong{display:block;font-family:"Noto Serif TC",serif;font-size:32px;color:var(--gold-deep);margin-bottom:8px;font-weight:500}
+  .trust-item span{font-size:11px;color:var(--ink-soft);letter-spacing:.2em;text-transform:uppercase}
+
+  .quote{background:var(--ink);color:var(--bg);padding:120px 0}
+  .quote blockquote{max-width:880px;margin:0 auto;text-align:center;font-family:"Noto Serif TC",serif;font-size:34px;line-height:1.6;font-weight:400}
+  .quote blockquote em{font-style:normal;color:var(--gold-soft);font-family:"Cormorant Garamond",serif}
+  .quote cite{display:block;margin-top:32px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:rgba(251,248,243,.5);font-style:normal;font-family:"Noto Sans TC",sans-serif}
+
+  .cta-bridge{background:#fff;padding:130px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .cta-bridge-inner{text-align:center;max-width:720px;margin:0 auto}
+  .cta-bridge h2{font-size:48px;margin-bottom:20px;line-height:1.25;font-weight:500}
+  .cta-bridge h2 em{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold-deep)}
+  .cta-bridge p{color:var(--ink-soft);margin-bottom:44px;font-size:15px}
+  .channels{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .channel{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border:1px solid var(--line);background:#fff;transition:.2s;font-size:13px;letter-spacing:.05em}
+  .channel:hover{border-color:var(--gold);transform:translateY(-2px)}
+  .channel .dot{width:8px;height:8px;border-radius:50%;background:#1aad19}
+  .channel.line .dot{background:#06c755}
+  .channel.kakao .dot{background:#fee500}
+  .channel.phone .dot{background:var(--gold)}
+
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  @media(max-width:880px){.loc-grid{grid-template-columns:1fr}}
+  .loc-info h3{font-size:42px;margin-bottom:28px;font-weight:500;line-height:1.2}
+  .loc-info h3 em{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold-deep)}
+  .loc-info dl{display:grid;grid-template-columns:90px 1fr;gap:18px 24px;font-size:15px;margin-bottom:36px;padding-top:24px;border-top:1px solid var(--line)}
+  .loc-info dt{color:var(--gold-deep);letter-spacing:.18em;font-size:11px;text-transform:uppercase;font-weight:500;padding-top:4px}
+  .loc-info dd{color:var(--ink-soft)}
+  .map-card{aspect-ratio:4/3;overflow:hidden;background:#fff;border:1px solid var(--line)}
+  .map-card iframe{width:100%;height:100%;border:0}
+
+  .faq{background:var(--bg-soft)}
+  .faq-list{max-width:840px;margin:0 auto}
+  .faq-item{border-top:1px solid var(--line);padding:28px 0;cursor:pointer}
+  .faq-item:last-child{border-bottom:1px solid var(--line)}
+  .faq-item summary{list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:18px;font-weight:500;color:var(--ink)}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:"+";color:var(--gold-deep);font-size:24px;transition:.2s;font-weight:300}
+  .faq-item[open] summary::after{transform:rotate(45deg)}
+  .faq-item p{margin-top:16px;color:var(--ink-soft);font-size:14px;line-height:1.85}
+
+  footer{padding:80px 0 40px;background:var(--ink);color:#a39e94}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
+  @media(max-width:680px){.foot-grid{grid-template-columns:1fr;gap:40px}}
+  footer h4{font-size:11px;letter-spacing:.3em;color:var(--gold-soft);margin-bottom:24px;text-transform:uppercase;font-weight:500}
+  footer .brand{color:#fff}
+  footer p,footer li{font-size:13px;color:#a39e94;line-height:2}
+  footer ul{list-style:none}
+  .copy{text-align:center;font-size:11px;color:#6b675f;letter-spacing:.15em}
+
+  .sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;padding:12px;gap:8px;background:rgba(251,248,243,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .sticky-cta a{flex:1;text-align:center;padding:14px;font-size:13px;font-weight:500;letter-spacing:.15em}
+  .sticky-cta .s-line{background:#06c755;color:#fff}
+  .sticky-cta .s-call{background:var(--ink);color:#fff}
+  @media(max-width:760px){.sticky-cta{display:flex}body{padding-bottom:80px}.hero h1{font-size:42px}.sec-head h2,.cta-bridge h2,.loc-info h3,.doctor-info h3{font-size:34px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">N · SHINE<small>清潭・首爾</small></div>
+    <nav>
+      <a href="#doctor">院長親診</a>
+      <a href="#why">為何選擇</a>
+      <a href="#treatments">王牌療程</a>
+      <a href="#process">VIP流程</a>
+      <a href="#location">院所</a>
+    </nav>
+    <a href="#cta" class="cta">LINE 諮詢</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">N Shine Clinic · Cheongdam · Seoul</span>
+      <h1>院長親診<br/>客製化診斷<br/><em>韓國清潭ENSHINE診所</em></h1>
+      <p class="lede">坐落首爾江南清潭洞 K+ 醫療大樓,趙鎮亨院長親自從面診到療程全程負責,以「正確的診斷,帶來正確的治療」為信念,為每一位海外貴賓量身定制抗老方案。</p>
+      <div class="hero-stats">
+        <div><strong>1:1</strong><span>院長親自面診</span></div>
+        <div><strong>8+</strong><span>原廠頂級儀器</span></div>
+        <div><strong>VIP</strong><span>獨立隱密診間</span></div>
+      </div>
+      <div class="btn-row">
+        <a href="#cta" class="btn btn-line">LINE 免費諮詢 →</a>
+        <a href="#treatments" class="btn btn-ghost">看王牌療程</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-body">
+        <small>SIGNATURE PHILOSOPHY</small>
+        <h3>「讓高貴的您,綻放最美的光」</h3>
+        <p>不是套餐式醫美,而是從皮膚診斷開始的一對一客製 — 這是 N Shine 的承諾。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doctor" id="doctor">
+  <div class="wrap doctor-grid">
+    <div class="doctor-img">
+      <div class="doctor-img-label">
+        <small>CHIEF PHYSICIAN</small>
+        <h4>趙鎮亨 院長</h4>
+      </div>
+    </div>
+    <div class="doctor-info">
+      <span class="eyebrow">Meet the Doctor</span>
+      <h3>從 <em>診斷</em> 開始的<br/>院長親診醫美</h3>
+      <p>N Shine 不接受「流水線式」治療。從您加 LINE 諮詢開始,所有方案、面診、療程、術後管理,均由趙鎮亨院長本人完成。所謂「客製」,不是選擇套餐,而是真正讀懂您的皮膚狀態、生活習慣與期待。</p>
+      <ul class="doctor-cv">
+        <li>梨花女子大學醫學院 醫學博士</li>
+        <li>大韓美容整形雷射研究醫師會 副會長</li>
+        <li>國際美容抗衰老學會 學術委員</li>
+        <li>專攻領域:抗老客製治療、再生醫學、幹細胞美容</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why N Shine</span>
+      <h2>為什麼台灣貴賓<br/>選擇 <em>N Shine</em></h2>
+      <p>不只是儀器,而是一套從「診斷」到「術後追蹤」全程院長親手把關的醫美哲學。</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">— 01</div>
+        <h3>院長親診・全程一人</h3>
+        <p>從面診、療程到回診全部由趙鎮亨院長親自完成,絕不交由助手。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">— 02</div>
+        <h3>診斷先於治療</h3>
+        <p>獨家肌膚診斷流程,基於皮膚狀態、生活方式、目標期待,客製專屬方案。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">— 03</div>
+        <h3>清潭核心地段</h3>
+        <p>首爾江南清潭洞 K+ 醫療大樓 9 樓,與多位明星御用院同等級商圈。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">— 04</div>
+        <h3>中文 1:1 VIP</h3>
+        <p>從 LINE 諮詢、機場接送到術後追蹤全部中文,資訊零遺漏,體驗如家。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="treatments">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Signature Treatments</span>
+      <h2>N Shine 八大<em>核心療程</em></h2>
+      <p>從精準拉提到再生抗老,從鎏光肌膚到幹細胞抗衰,每項療程皆由院長根據您的皮膚狀態推薦。</p>
+    </div>
+    <div class="treat-grid">
+
+      <article class="treat-card">
+        <div class="treat-img t1"><span class="treat-tag">★ 推薦</span></div>
+        <div class="treat-body">
+          <div class="sub">Ultherapy</div>
+          <h3>音波拉提</h3>
+          <p>HIFU 高強度聚焦超音波直達 SMAS 筋膜層,促進膠原再生,適合臉部鬆弛與雙下巴。</p>
+          <div class="treat-meta">
+            <span><strong>1次</strong>建議</span>
+            <span><strong>0天</strong>修復</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t2"><span class="treat-tag">★ 熱門</span></div>
+        <div class="treat-body">
+          <div class="sub">Thermage FLX</div>
+          <h3>第五代鳳凰電波</h3>
+          <p>單極電波均勻加熱真皮層,刺激膠原新生,最適合預防型抗老、毛孔鬆弛。</p>
+          <div class="treat-meta">
+            <span><strong>1次</strong>建議</span>
+            <span><strong>0天</strong>修復</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t3"><span class="treat-tag">韓國獨家</span></div>
+        <div class="treat-body">
+          <div class="sub">ONDA Lifting</div>
+          <h3>ONDA 微波拉提</h3>
+          <p>韓國本土研發極超短波,精準作用皮下脂肪與 SMAS,拉提同時雕塑輪廓。</p>
+          <div class="treat-meta">
+            <span><strong>1-2次</strong>建議</span>
+            <span><strong>0天</strong>修復</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t4"><span class="treat-tag">深層煥膚</span></div>
+        <div class="treat-body">
+          <div class="sub">Potenza</div>
+          <h3>波坦扎黃金電波</h3>
+          <p>四種針頭精準應對毛孔、痘疤、膚色暗沉,深層射頻刺激膠原蛋白重組。</p>
+          <div class="treat-meta">
+            <span><strong>3-5次</strong>建議</span>
+            <span><strong>1天</strong>修復</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t5"><span class="treat-tag">人氣王</span></div>
+        <div class="treat-body">
+          <div class="sub">Rejuran Healer</div>
+          <h3>瑞鎏 Rejuran</h3>
+          <p>三文魚 PDRN 注入肌底,修復受損細胞,改善細紋、毛孔與肌膚彈性。</p>
+          <div class="treat-meta">
+            <span><strong>3-5次</strong>建議</span>
+            <span><strong>1天</strong>修復</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t6"><span class="treat-tag">童顏針</span></div>
+        <div class="treat-body">
+          <div class="sub">Juvelook</div>
+          <h3>少女針 Juvelook</h3>
+          <p>PDLLA + HA 複合針劑,刺激膠原新生同時即時填充,告別暗沉與凹陷。</p>
+          <div class="treat-meta">
+            <span><strong>1-2次</strong>建議</span>
+            <span><strong>1天</strong>修復</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t7"><span class="treat-tag">SIGNATURE</span></div>
+        <div class="treat-body">
+          <div class="sub">N Shine Stem Cell</div>
+          <h3>ENSHINE 幹細胞抗老</h3>
+          <p>N Shine 獨家研發的幹細胞美容方案,深層修復肌膚底層細胞活力,真正逆轉時光。</p>
+          <div class="treat-meta">
+            <span><strong>客製</strong>方案</span>
+            <span><strong>0天</strong>修復</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t8"><span class="treat-tag">VIP 客製</span></div>
+        <div class="treat-body">
+          <div class="sub">Thread Lifting</div>
+          <h3>院長客製埋線</h3>
+          <p>韓國食藥廳 (MFDS) 認證 PLA 可吸收線材,即刻物理拉提 + 長效膠原刺激。</p>
+          <div class="treat-meta">
+            <span><strong>1次</strong>建議</span>
+            <span><strong>3-5天</strong>修復</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <blockquote>
+      正確的<em> 診斷 </em>,<br/>帶來正確的治療。<br/>這是 N Shine 的<em> 信念 </em>。
+      <cite>— 趙鎮亨 院長</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">VIP Patient Journey</span>
+      <h2>台灣貴賓 4 步<em>無憂流程</em></h2>
+      <p>從台灣一句 LINE 開始,到回國後的術後追蹤,我們承擔全部溝通成本。</p>
+    </div>
+    <div class="step-grid">
+      <div class="step">
+        <div class="step-num">i.</div>
+        <h3>LINE 免費諮詢</h3>
+        <p>加入官方 LINE,傳送照片即可獲得院長親自回覆的初步方案與預算區間,24 小時內中文回應。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">ii.</div>
+        <h3>抵韓 VIP 接送</h3>
+        <p>仁川/金浦機場專車接送,推薦合作飯店 (清潭洞步行可達),首日免費陪同。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">iii.</div>
+        <h3>院長面診&療程</h3>
+        <p>到院再次中文確認方案,簽署中文同意書,VIP 獨立診間,院長全程親手施作。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">iv.</div>
+        <h3>回台術後追蹤</h3>
+        <p>提供中文照護手冊,LINE 1:1 追蹤 90 天,提供視訊回診與必要時再訪安排。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="trust-item"><strong>院長親診</strong><span>全程一人負責</span></div>
+      <div class="trust-item"><strong>8+</strong><span>原廠直供儀器</span></div>
+      <div class="trust-item"><strong>清潭洞</strong><span>K+ 醫療大樓旗艦</span></div>
+      <div class="trust-item"><strong>96%</strong><span>海外回訪滿意度</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-bridge" id="cta">
+  <div class="wrap cta-bridge-inner">
+    <span class="eyebrow">Free Consultation</span>
+    <h2>加 LINE,獲取院長親自<em>客製方案</em></h2>
+    <p>傳送您的正面+45度自拍 + 想改善的部位,24 小時內由趙鎮亨院長親自回覆 (含價格區間、推薦療程、赴韓天數)。</p>
+    <div class="channels">
+      <a class="channel line" href="#" target="_blank" rel="noopener">
+        <span class="dot"></span>LINE 官方:<strong style="color:#06c755;margin-left:4px">@nshineclinic</strong>
+      </a>
+      <a class="channel phone" href="tel:+82-2-546-1446">
+        <span class="dot"></span>+82-2-546-1446
+      </a>
+      <a class="channel kakao" href="https://pf.kakao.com/" target="_blank" rel="noopener">
+        <span class="dot"></span>KakaoTalk
+      </a>
+      <a class="channel" href="#" onclick="alert('微信 ID:nshineclinic');return false;">
+        <span class="dot"></span>WeChat
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap">
+    <div class="loc-grid">
+      <div class="loc-info">
+        <span class="eyebrow">Visit Us</span>
+        <h3>首爾江南<br/>清潭洞 <em>K+ 醫療大樓</em></h3>
+        <dl>
+          <dt>地址</dt><dd>首爾特別市江南區島山大路 333 號 9 樓 (K+ 醫療大樓)<br/><span style="font-size:13px;color:#9d9081">서울 강남구 도산대로 333, 9F</span></dd>
+          <dt>捷運</dt><dd>狎鷗亭羅德奧站 5 號出口 步行 5 分鐘</dd>
+          <dt>營業</dt><dd>週一・四 10:00–19:00 / 週二・五 10:00–20:00<br/>週六 10:00–15:00<br/>(週三・週日及國定假日休診)</dd>
+        </dl>
+        <a href="#cta" class="btn btn-line">LINE 確認行程 →</a>
+      </div>
+      <div class="map-card">
+        <iframe src="https://www.google.com/maps?q=서울+강남구+도산대로+333&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>台灣旅客<em>常見問答</em></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>面診和療程真的都是院長本人嗎?</summary>
+        <p>是的。N Shine 的核心承諾是「院長親診」 — 從 LINE 回覆、面診、療程到術後追蹤,全部由趙鎮亨院長本人完成,這也是與其他醫美機構最大的區別。</p>
+      </details>
+      <details class="faq-item">
+        <summary>赴韓需要預留幾天?</summary>
+        <p>單一非侵入療程(音波/電波/ONDA):2 天 1 夜;組合方案:3 天 2 夜;埋線拉提:4-5 天預留消腫時間。詳細行程在面診前為您制定。</p>
+      </details>
+      <details class="faq-item">
+        <summary>價格怎麼確認?</summary>
+        <p>所有療程均於面診時簽署中文報價單,以韓元結算。可使用 Visa/Master/JCB,絕不會到院後臨時加價。</p>
+      </details>
+      <details class="faq-item">
+        <summary>不會韓文真的沒問題嗎?</summary>
+        <p>院內配有專屬中文顧問,從 LINE 諮詢、面診、簽署到術後追蹤全程中文進行。中文病歷可寄送至您指定信箱。</p>
+      </details>
+      <details class="faq-item">
+        <summary>回台後如有問題怎麼辦?</summary>
+        <p>提供 90 天 LINE 1:1 追蹤。如有任何不適可視訊回診,必要時安排再次赴韓免費複檢 (機票自理)。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:16px">N · SHINE CLINIC<small>CHEONGDAM · SEOUL</small></div>
+        <p>清潭 ENSHINE 美容診所 · 韓國首爾江南區島山大路 333 號 9 樓<br/>抗老客製・院長親診・海外 VIP 通道</p>
+      </div>
+      <div>
+        <h4>核心療程</h4>
+        <ul>
+          <li>音波拉提 Ulthera</li>
+          <li>第五代鳳凰電波</li>
+          <li>ONDA 微波拉提</li>
+          <li>波坦扎電波</li>
+          <li>瑞鎏 Rejuran</li>
+          <li>少女針 Juvelook</li>
+          <li>ENSHINE 幹細胞</li>
+        </ul>
+      </div>
+      <div>
+        <h4>聯絡我們</h4>
+        <ul>
+          <li>LINE:@nshineclinic</li>
+          <li>電話:+82-2-546-1446</li>
+          <li>地址:清潭洞 K+ 醫療大樓 9F</li>
+          <li>韓國首爾</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 청담엔샤인의원 · N Shine Clinic. All rights reserved. | 海外推廣合作:포트존 PortZone</div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="s-line" href="#cta">LINE 諮詢</a>
+  <a class="s-call" href="tel:+82-2-546-1446">立即來電</a>
+</div>
+
+</body>
+</html>

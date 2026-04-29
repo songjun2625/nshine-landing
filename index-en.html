@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>N Shine Clinic Seoul · Chief-Physician Diagnostic Aesthetics in Cheongdam | International Patient Concierge</title>
+<meta name="description" content="Cheongdam, Seoul. Diagnosis-led aesthetic medicine personally conducted by Dr. Cho Jin-hyung. Ultherapy, Thermage FLX, Potenza, Rejuran, stem-cell anti-aging — with English concierge for North American patients." />
+<meta property="og:title" content="N Shine Clinic Seoul — Diagnosis-Led Aesthetic Medicine" />
+<meta property="og:description" content="Cheongdam · Chief Physician personally · English VIP concierge" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbf8f3;
+    --bg-soft:#f3ede2;
+    --bg-warm:#ede4d2;
+    --ink:#2a2520;
+    --ink-soft:#7a7065;
+    --gold:#b89968;
+    --gold-soft:#d4b988;
+    --gold-deep:#8a7146;
+    --line:rgba(42,37,32,.08);
+    --shadow-soft:0 12px 30px -16px rgba(138,113,70,.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:var(--bg);color:var(--ink);
+    line-height:1.75;-webkit-font-smoothing:antialiased;font-weight:300;
+  }
+  h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-.005em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+
+  .topbar{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(16px);background:rgba(251,248,243,.85);border-bottom:1px solid var(--line)}
+  .topbar-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:1240px;margin:0 auto}
+  .brand{font-family:"Cormorant Garamond",serif;font-size:24px;letter-spacing:.32em;font-weight:500;color:var(--gold-deep)}
+  .brand small{display:block;font-size:9px;letter-spacing:.4em;color:var(--ink-soft);margin-top:2px;font-family:"Inter",sans-serif;font-weight:400}
+  .topbar nav{display:flex;gap:30px;font-size:13px;color:var(--ink-soft);letter-spacing:.05em}
+  .topbar nav a:hover{color:var(--gold-deep)}
+  .topbar .cta{background:var(--gold);color:#fff;padding:10px 22px;border-radius:0;font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+  .topbar .cta:hover{background:var(--gold-deep)}
+  @media(max-width:760px){.topbar nav{display:none}}
+
+  .hero{
+    min-height:100vh;padding:160px 0 120px;position:relative;overflow:hidden;
+    background:
+      radial-gradient(48% 40% at 90% 10%,rgba(184,153,104,.16),transparent 70%),
+      radial-gradient(48% 50% at -5% 100%,rgba(237,228,210,.8),transparent 60%),
+      var(--bg);
+  }
+  .hero::before{
+    content:"";position:absolute;top:30%;right:10%;width:1px;height:30%;
+    background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:.4;
+  }
+  .hero-inner{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+  @media(max-width:880px){.hero-inner{grid-template-columns:1fr;gap:50px}}
+  .eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.35em;color:var(--gold-deep);text-transform:uppercase;margin-bottom:36px;font-weight:500}
+  .eyebrow::before{content:"";width:36px;height:1px;background:var(--gold)}
+  .hero h1{font-size:84px;line-height:1.05;margin-bottom:36px;letter-spacing:-.02em;font-weight:400;color:var(--ink)}
+  .hero h1 em{font-style:italic;color:var(--gold-deep);font-weight:400}
+  .hero p.lede{font-size:18px;color:var(--ink-soft);max-width:520px;margin-bottom:48px;line-height:1.75}
+  .hero-stats{display:flex;gap:48px;margin-bottom:52px;flex-wrap:wrap}
+  .hero-stats strong{display:block;font-family:"Cormorant Garamond",serif;font-size:36px;color:var(--gold-deep);font-weight:500;line-height:1;font-style:italic}
+  .hero-stats span{font-size:11px;color:var(--ink-soft);letter-spacing:.18em;text-transform:uppercase;margin-top:10px;display:block}
+  .btn-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:18px 32px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;transition:.25s;border-radius:0}
+  .btn-primary{background:var(--ink);color:#fff;border:1px solid var(--ink)}
+  .btn-primary:hover{background:var(--gold-deep);border-color:var(--gold-deep)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+
+  .hero-card{
+    aspect-ratio:4/5;position:relative;overflow:hidden;
+    background:linear-gradient(180deg,#f3ebd9 0%,#e2d2b3 60%,#c9b491 100%);
+  }
+  .hero-card::after{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(45% 30% at 30% 25%,rgba(255,255,255,.65),transparent 70%),
+      radial-gradient(60% 50% at 70% 90%,rgba(184,153,104,.35),transparent 70%);
+  }
+  .hero-card-body{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:48px;z-index:2;color:var(--ink)}
+  .hero-card-body small{letter-spacing:.3em;font-size:10px;margin-bottom:14px;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+  .hero-card-body h3{font-size:34px;line-height:1.25;margin-bottom:14px;font-weight:500;letter-spacing:-.01em}
+  .hero-card-body p{font-size:14px;color:#5a4f42;line-height:1.7}
+
+  section{padding:140px 0;position:relative}
+  .sec-head{text-align:center;margin-bottom:88px}
+  .sec-head .eyebrow{justify-content:center}
+  .sec-head h2{font-size:60px;line-height:1.1;margin-bottom:20px;font-weight:400;letter-spacing:-.02em}
+  .sec-head h2 em{font-style:italic;color:var(--gold-deep);font-weight:400}
+  .sec-head p{color:var(--ink-soft);max-width:600px;margin:0 auto;font-size:16px}
+
+  /* Doctor */
+  .doctor{background:#fff}
+  .doctor-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+  @media(max-width:880px){.doctor-grid{grid-template-columns:1fr;gap:50px}}
+  .doctor-img{
+    aspect-ratio:3/4;position:relative;overflow:hidden;
+    background:linear-gradient(180deg,#ede4d2 0%,#d4c4a3 100%);
+  }
+  .doctor-img::after{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(50% 40% at 50% 30%,rgba(255,255,255,.4),transparent 70%);
+  }
+  .doctor-img-label{position:absolute;bottom:36px;left:36px;color:var(--ink);z-index:2}
+  .doctor-img-label small{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+  .doctor-img-label h4{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:500;margin-top:8px;letter-spacing:-.01em}
+  .doctor-info h3{font-size:50px;margin-bottom:24px;line-height:1.1;font-weight:400;letter-spacing:-.02em}
+  .doctor-info h3 em{font-style:italic;color:var(--gold-deep)}
+  .doctor-info > p{color:var(--ink-soft);font-size:16px;margin-bottom:32px;line-height:1.75}
+  .doctor-cv{display:grid;gap:14px;padding-top:28px;border-top:1px solid var(--line)}
+  .doctor-cv li{list-style:none;display:flex;gap:18px;font-size:14px;color:var(--ink-soft);line-height:1.6}
+  .doctor-cv li::before{content:"—";color:var(--gold);flex-shrink:0}
+
+  /* Why */
+  .why{background:var(--bg-soft)}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  @media(max-width:880px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.why-grid{grid-template-columns:1fr}}
+  .why-card{padding:48px 36px;border-right:1px solid var(--line);transition:.3s;background:#fff}
+  .why-card:last-child{border-right:none}
+  @media(max-width:880px){.why-card:nth-child(2){border-right:none}.why-card:nth-child(1),.why-card:nth-child(2){border-bottom:1px solid var(--line)}}
+  .why-card:hover{background:var(--bg-warm)}
+  .why-num{font-family:"Cormorant Garamond",serif;font-size:14px;color:var(--gold-deep);letter-spacing:.3em;margin-bottom:24px;font-style:italic}
+  .why-card h3{font-size:24px;margin-bottom:14px;font-weight:500;letter-spacing:-.01em;color:var(--ink)}
+  .why-card p{font-size:14px;color:var(--ink-soft);line-height:1.75}
+
+  /* Treatments */
+  .treat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  @media(max-width:1080px){.treat-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:880px){.treat-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.treat-grid{grid-template-columns:1fr}}
+  .treat-card{
+    background:#fff;transition:.3s;display:flex;flex-direction:column;
+    border:1px solid var(--line);
+  }
+  .treat-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:var(--shadow-soft)}
+  .treat-img{height:200px;position:relative;overflow:hidden}
+  .treat-img.t1{background:linear-gradient(135deg,#f0e6d3,#d8c5a2)}
+  .treat-img.t2{background:linear-gradient(135deg,#ece2cc,#cdba94)}
+  .treat-img.t3{background:linear-gradient(135deg,#e8dcc4,#c8b58e)}
+  .treat-img.t4{background:linear-gradient(135deg,#e2d6bc,#bea884)}
+  .treat-img.t5{background:linear-gradient(135deg,#ede3cc,#d2bf99)}
+  .treat-img.t6{background:linear-gradient(135deg,#e6d9bf,#c4af86)}
+  .treat-img.t7{background:linear-gradient(135deg,#ebe0c8,#cab48a)}
+  .treat-img.t8{background:linear-gradient(135deg,#e3d5b8,#bea984)}
+  .treat-img::after{content:"";position:absolute;inset:0;background:radial-gradient(50% 50% at 30% 30%,rgba(255,255,255,.5),transparent 60%)}
+  .treat-tag{position:absolute;top:16px;left:16px;background:#fff;color:var(--gold-deep);font-size:10px;letter-spacing:.2em;padding:5px 10px;z-index:2;text-transform:uppercase;font-weight:500;border:1px solid var(--gold)}
+  .treat-body{padding:28px;flex:1;display:flex;flex-direction:column}
+  .treat-body h3{font-size:24px;margin-bottom:4px;font-weight:500;letter-spacing:-.01em}
+  .treat-body .sub{font-size:10px;color:var(--gold-deep);letter-spacing:.25em;text-transform:uppercase;margin-bottom:16px;font-weight:500}
+  .treat-body p{font-size:14px;color:var(--ink-soft);margin-bottom:20px;flex:1;line-height:1.7}
+  .treat-meta{display:flex;gap:18px;font-size:11px;color:var(--ink-soft);padding-top:16px;border-top:1px solid var(--line);text-transform:uppercase;letter-spacing:.1em}
+  .treat-meta span strong{color:var(--ink);display:block;margin-bottom:3px;font-size:13px;font-weight:600;letter-spacing:0;text-transform:none}
+
+  /* Process */
+  .process{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-warm) 100%)}
+  .step-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+  @media(max-width:880px){.step-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.step-grid{grid-template-columns:1fr}}
+  .step{padding:40px 32px;background:#fff;border:1px solid var(--line)}
+  .step-num{font-family:"Cormorant Garamond",serif;font-size:52px;color:var(--gold);font-weight:500;margin-bottom:16px;line-height:1;font-style:italic}
+  .step h3{font-size:22px;margin-bottom:12px;font-weight:500;letter-spacing:-.01em}
+  .step p{font-size:14px;color:var(--ink-soft);line-height:1.7}
+
+  /* Trust */
+  .trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  @media(max-width:880px){.trust-row{grid-template-columns:repeat(2,1fr)}}
+  .trust-item{padding:48px 24px;border-right:1px solid var(--line)}
+  .trust-item:last-child{border-right:none}
+  @media(max-width:880px){.trust-item:nth-child(2){border-right:none}.trust-item:nth-child(1),.trust-item:nth-child(2){border-bottom:1px solid var(--line)}}
+  .trust-item strong{display:block;font-family:"Cormorant Garamond",serif;font-size:48px;color:var(--gold-deep);margin-bottom:8px;font-weight:500;font-style:italic;line-height:1.1}
+  .trust-item span{font-size:11px;color:var(--ink-soft);letter-spacing:.2em;text-transform:uppercase}
+
+  /* Quote */
+  .quote{background:var(--ink);color:var(--bg);padding:130px 0}
+  .quote blockquote{
+    max-width:880px;margin:0 auto;text-align:center;
+    font-family:"Cormorant Garamond",serif;font-size:46px;line-height:1.4;font-weight:400;letter-spacing:-.01em;
+  }
+  .quote blockquote em{font-style:italic;color:var(--gold-soft)}
+  .quote cite{display:block;margin-top:36px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:rgba(251,248,243,.5);font-style:normal;font-family:"Inter",sans-serif}
+
+  /* CTA bridge */
+  .cta-bridge{background:#fff;padding:140px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .cta-bridge-inner{text-align:center;max-width:720px;margin:0 auto}
+  .cta-bridge h2{font-size:56px;margin-bottom:20px;font-weight:400;letter-spacing:-.02em;line-height:1.1}
+  .cta-bridge h2 em{font-style:italic;color:var(--gold-deep)}
+  .cta-bridge p{color:var(--ink-soft);margin-bottom:44px;font-size:16px}
+  .channels{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .channel{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border:1px solid var(--line);background:#fff;transition:.2s;font-size:13px;letter-spacing:.05em}
+  .channel:hover{border-color:var(--gold);transform:translateY(-2px)}
+  .channel .dot{width:8px;height:8px;border-radius:50%;background:#37c34a}
+  .channel.whatsapp .dot{background:#25d366}
+  .channel.email .dot{background:var(--gold)}
+  .channel.phone .dot{background:var(--ink)}
+
+  /* Location */
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  @media(max-width:880px){.loc-grid{grid-template-columns:1fr}}
+  .loc-info h3{font-size:48px;margin-bottom:28px;font-weight:400;letter-spacing:-.02em;line-height:1.1}
+  .loc-info h3 em{font-style:italic;color:var(--gold-deep)}
+  .loc-info dl{display:grid;grid-template-columns:110px 1fr;gap:18px 24px;font-size:15px;margin-bottom:36px;padding-top:24px;border-top:1px solid var(--line)}
+  .loc-info dt{color:var(--gold-deep);letter-spacing:.18em;font-size:11px;text-transform:uppercase;font-weight:500;padding-top:4px}
+  .loc-info dd{color:var(--ink-soft)}
+  .map-card{aspect-ratio:4/3;overflow:hidden;background:#fff;border:1px solid var(--line)}
+  .map-card iframe{width:100%;height:100%;border:0}
+
+  /* FAQ */
+  .faq{background:var(--bg-soft)}
+  .faq-list{max-width:840px;margin:0 auto}
+  .faq-item{border-top:1px solid var(--line);padding:32px 0;cursor:pointer}
+  .faq-item:last-child{border-bottom:1px solid var(--line)}
+  .faq-item summary{list-style:none;display:flex;justify-content:space-between;align-items:center;font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:500;letter-spacing:-.01em}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:"+";color:var(--gold-deep);font-size:32px;transition:.2s;font-weight:300;line-height:1}
+  .faq-item[open] summary::after{transform:rotate(45deg)}
+  .faq-item p{margin-top:18px;color:var(--ink-soft);font-size:15px;max-width:80%;line-height:1.8}
+
+  /* Footer */
+  footer{padding:80px 0 40px;background:var(--ink);color:#a39e94}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:60px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08)}
+  @media(max-width:680px){.foot-grid{grid-template-columns:1fr;gap:40px}}
+  footer h4{font-size:11px;letter-spacing:.3em;color:var(--gold-soft);margin-bottom:24px;text-transform:uppercase;font-weight:500}
+  footer .brand{color:#fff}
+  footer p,footer li{font-size:13px;color:#a39e94;line-height:2}
+  footer ul{list-style:none}
+  .copy{text-align:center;font-size:11px;color:#6b675f;letter-spacing:.15em;text-transform:uppercase}
+
+  .sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;padding:12px;gap:8px;background:rgba(251,248,243,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .sticky-cta a{flex:1;text-align:center;padding:14px;font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase}
+  .sticky-cta .s-whatsapp{background:#25d366;color:#fff}
+  .sticky-cta .s-call{background:var(--ink);color:#fff}
+  @media(max-width:760px){.sticky-cta{display:flex}body{padding-bottom:80px}.hero h1{font-size:54px}.sec-head h2,.cta-bridge h2,.loc-info h3,.doctor-info h3{font-size:40px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">N · SHINE<small>CHEONGDAM · SEOUL</small></div>
+    <nav>
+      <a href="#doctor">Chief Physician</a>
+      <a href="#why">Why N Shine</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#process">Concierge</a>
+      <a href="#location">Visit</a>
+    </nav>
+    <a href="#cta" class="cta">Book Consult</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">N Shine Clinic · Cheongdam · Seoul</span>
+      <h1>Diagnosis<br/><em>before</em><br/>treatment.</h1>
+      <p class="lede">A Cheongdam clinic where every consultation, treatment, and follow-up is conducted personally by Chief Physician Dr. Cho Jin-hyung — built around a simple belief: the right treatment begins with the right diagnosis.</p>
+      <div class="hero-stats">
+        <div><strong>1:1</strong><span>Chief physician</span></div>
+        <div><strong>8+</strong><span>OEM devices</span></div>
+        <div><strong>VIP</strong><span>Private suites</span></div>
+      </div>
+      <div class="btn-row">
+        <a href="#cta" class="btn btn-primary">Book a Free Consult</a>
+        <a href="#treatments" class="btn btn-ghost">Explore Treatments</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-body">
+        <small>Signature Philosophy</small>
+        <h3>"Let your noble self shine its brightest."</h3>
+        <p>Not a menu of treatments — a diagnosis-led, one-to-one plan personally authored by your physician.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doctor" id="doctor">
+  <div class="wrap doctor-grid">
+    <div class="doctor-img">
+      <div class="doctor-img-label">
+        <small>CHIEF PHYSICIAN</small>
+        <h4>Dr. Cho Jin-hyung</h4>
+      </div>
+    </div>
+    <div class="doctor-info">
+      <span class="eyebrow">Meet the Doctor</span>
+      <h3>Aesthetic medicine,<br/><em>personally</em> conducted.</h3>
+      <p>N Shine does not believe in assembly-line aesthetics. Every consultation, every treatment, every follow-up message is handled by Dr. Cho personally. "Customized" here is not a marketing word — it means he reads your skin, your routine, and your goals before any device is selected.</p>
+      <ul class="doctor-cv">
+        <li>M.D., Ewha Womans University School of Medicine</li>
+        <li>Vice President, Korean Society for Aesthetic Plastic Surgery & Laser Medicine</li>
+        <li>Academic Committee, International Society of Aesthetic Anti-Aging Medicine</li>
+        <li>Specialties: Customized anti-aging protocols · Regenerative medicine · Stem-cell aesthetics</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why N Shine</span>
+      <h2>Built for the<br/><em>discerning</em> patient.</h2>
+      <p>Not a stack of devices, but a philosophy: from diagnosis to aftercare, every step held in the same physician's hands.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">— 01</div>
+        <h3>Chief physician throughout</h3>
+        <p>Every consult, every treatment, every follow-up is performed by Dr. Cho. Never delegated to associates.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">— 02</div>
+        <h3>Diagnosis, then treatment</h3>
+        <p>A proprietary diagnostic flow — your skin, your lifestyle, your timeline — drives every plan. Devices follow, not lead.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">— 03</div>
+        <h3>Cheongdam flagship address</h3>
+        <p>9th floor of K+ Medical Tower in Cheongdam — Seoul's most established aesthetic medical district.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">— 04</div>
+        <h3>English concierge, end-to-end</h3>
+        <p>From your first WhatsApp to the airport pickup, treatment day, and 90-day follow-up — all in English.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="treatments">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Signature Treatments</span>
+      <h2>Eight <em>signature</em> protocols.</h2>
+      <p>From precision lifting to regenerative anti-aging — selected and combined by your physician, never picked from a price list.</p>
+    </div>
+    <div class="treat-grid">
+
+      <article class="treat-card">
+        <div class="treat-img t1"><span class="treat-tag">Most Booked</span></div>
+        <div class="treat-body">
+          <div class="sub">Ultherapy</div>
+          <h3>Ultherapy MPT</h3>
+          <p>FDA-cleared HIFU energy delivered to the SMAS layer — the same plane a surgeon would address.</p>
+          <div class="treat-meta">
+            <span><strong>1 visit</strong>Sessions</span>
+            <span><strong>0 days</strong>Downtime</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t2"><span class="treat-tag">Premier</span></div>
+        <div class="treat-body">
+          <div class="sub">Thermage FLX</div>
+          <h3>5th-Gen Thermage</h3>
+          <p>Monopolar RF tightens existing collagen and stimulates new growth — for fine lines and overall skin quality.</p>
+          <div class="treat-meta">
+            <span><strong>1 visit</strong>Sessions</span>
+            <span><strong>0 days</strong>Downtime</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t3"><span class="treat-tag">Korea-First</span></div>
+        <div class="treat-body">
+          <div class="sub">ONDA Lifting</div>
+          <h3>ONDA Microwave</h3>
+          <p>Korean-developed Coolwaves technology targeting subcutaneous fat and SMAS — sculpting and lifting in one pass.</p>
+          <div class="treat-meta">
+            <span><strong>1–2</strong>Sessions</span>
+            <span><strong>0 days</strong>Downtime</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t4"><span class="treat-tag">Resurfacing</span></div>
+        <div class="treat-body">
+          <div class="sub">Potenza</div>
+          <h3>Potenza RF Microneedling</h3>
+          <p>Four-tip RF microneedling system addressing pores, scarring, and skin texture with deep collagen remodeling.</p>
+          <div class="treat-meta">
+            <span><strong>3–5</strong>Sessions</span>
+            <span><strong>1 day</strong>Downtime</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t5"><span class="treat-tag">Regenerative</span></div>
+        <div class="treat-body">
+          <div class="sub">Rejuran Healer</div>
+          <h3>Rejuran (PDRN)</h3>
+          <p>Salmon-derived PDRN injected into the dermis — repairs damaged cells, refines fine lines, restores elasticity.</p>
+          <div class="treat-meta">
+            <span><strong>3–5</strong>Sessions</span>
+            <span><strong>1 day</strong>Downtime</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t6"><span class="treat-tag">Volumizer</span></div>
+        <div class="treat-body">
+          <div class="sub">Juvelook</div>
+          <h3>Juvelook Biostimulator</h3>
+          <p>PDLLA + HA composite stimulating new collagen while delivering immediate volume — refreshed without filler giveaways.</p>
+          <div class="treat-meta">
+            <span><strong>1–2</strong>Sessions</span>
+            <span><strong>1 day</strong>Downtime</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t7"><span class="treat-tag">Signature</span></div>
+        <div class="treat-body">
+          <div class="sub">N Shine Stem Cell</div>
+          <h3>N Shine Stem-Cell</h3>
+          <p>An exclusive in-house stem-cell anti-aging protocol — restoring deep-layer cellular vitality where surface treatments cannot reach.</p>
+          <div class="treat-meta">
+            <span><strong>Custom</strong>Plan</span>
+            <span><strong>0 days</strong>Downtime</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="treat-card">
+        <div class="treat-img t8"><span class="treat-tag">Custom</span></div>
+        <div class="treat-body">
+          <div class="sub">Thread Lifting</div>
+          <h3>Custom PDO/PLA Threads</h3>
+          <p>KMFDS-certified absorbable sutures — calibrated to your facial structure for immediate lift and long-term collagen.</p>
+          <div class="treat-meta">
+            <span><strong>1 visit</strong>Sessions</span>
+            <span><strong>3–5 days</strong>Downtime</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <blockquote>
+      The right <em>diagnosis</em><br/>brings the right treatment.<br/>That is the N Shine <em>belief</em>.
+      <cite>— Dr. Cho Jin-hyung, Chief Physician</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">VIP Patient Journey</span>
+      <h2>A four-step <em>concierge</em>.</h2>
+      <p>From your first message in your living room to follow-up after you've flown home — the logistics are ours, not yours.</p>
+    </div>
+    <div class="step-grid">
+      <div class="step">
+        <div class="step-num">i.</div>
+        <h3>Virtual Consult</h3>
+        <p>Send three photos via WhatsApp or email. Dr. Cho personally reviews and replies with a treatment outline and USD price range within 24 hours.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">ii.</div>
+        <h3>Arrival</h3>
+        <p>English-speaking driver meets you at Incheon or Gimpo. Recommended hotels in Cheongdam walking distance, with optional same-day welcome consult.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">iii.</div>
+        <h3>Treatment Day</h3>
+        <p>Final consultation and informed consent in English. Private VIP suite. Every step performed personally by Dr. Cho.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">iv.</div>
+        <h3>Aftercare Home</h3>
+        <p>English aftercare protocol. 90 days of WhatsApp follow-up, with scheduled video check-ins at week 2, 4, and 8.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="trust-item"><strong>Personally</strong><span>Chief physician throughout</span></div>
+      <div class="trust-item"><strong>8+</strong><span>OEM devices</span></div>
+      <div class="trust-item"><strong>K+ Tower</strong><span>Cheongdam flagship 9F</span></div>
+      <div class="trust-item"><strong>96%</strong><span>Intl. satisfaction</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-bridge" id="cta">
+  <div class="wrap cta-bridge-inner">
+    <span class="eyebrow">Free Virtual Consult</span>
+    <h2>Begin with a <em>conversation</em>.</h2>
+    <p>Send three photos and a brief note about what you'd like to address. Dr. Cho personally reviews and replies with treatment options, expected downtime, and a USD price range within 24 hours.</p>
+    <div class="channels">
+      <a class="channel whatsapp" href="https://wa.me/" target="_blank" rel="noopener">
+        <span class="dot"></span>WhatsApp
+      </a>
+      <a class="channel email" href="mailto:nshineclinic@gmail.com">
+        <span class="dot"></span>nshineclinic@gmail.com
+      </a>
+      <a class="channel phone" href="tel:+82-2-546-1446">
+        <span class="dot"></span>+82-2-546-1446
+      </a>
+    </div>
+    <p style="margin-top:32px;font-size:13px;color:var(--ink-soft)">North America time-zone friendly · Replies typically within 6 business hours</p>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap">
+    <div class="loc-grid">
+      <div class="loc-info">
+        <span class="eyebrow">Visit Us</span>
+        <h3>The Cheongdam<br/><em>K+ Medical Tower.</em></h3>
+        <dl>
+          <dt>Address</dt><dd>9F, K+ Medical Tower<br/>333 Dosan-daero, Gangnam-gu<br/>Seoul, South Korea</dd>
+          <dt>Subway</dt><dd>Apgujeong Rodeo Station, Exit 5 (5 min walk)</dd>
+          <dt>Hours</dt><dd>Mon, Thu: 10:00 – 19:00<br/>Tue, Fri: 10:00 – 20:00 / Sat: 10:00 – 15:00<br/><em>Closed Wednesdays, Sundays & national holidays</em></dd>
+          <dt>Airport</dt><dd>~70 min from ICN · ~40 min from GMP<br/>Pickup arranged for international patients</dd>
+        </dl>
+        <a href="#cta" class="btn btn-primary">Plan Your Visit</a>
+      </div>
+      <div class="map-card">
+        <iframe src="https://www.google.com/maps?q=333+Dosan-daero+Gangnam-gu+Seoul&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>The <em>practical</em> questions.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Will Dr. Cho personally perform the treatment?</summary>
+        <p>Yes. The N Shine model is built on it: Dr. Cho personally reviews your virtual consult, conducts your in-person diagnosis, performs every treatment, and handles your post-care follow-up. This is the difference from typical large-volume clinics.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How many days should I plan to stay in Seoul?</summary>
+        <p>Single non-invasive treatments (Ultherapy, Thermage, ONDA): 2 nights. Combination protocols: 3 nights. Thread lifting: 4–5 nights to accommodate initial swelling. We provide a tailored itinerary in your pre-arrival plan.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How does pricing work? Are there hidden fees?</summary>
+        <p>You receive a written treatment quote in USD before booking your flight. The quote is honored at consultation. We accept Visa, Mastercard, Amex, and Apple Pay — no facility fees, no after-the-fact charges.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Will the language be an issue?</summary>
+        <p>No. International patient coordinators speak fluent English. Every consent form, treatment plan, and aftercare document is provided in English, and a coordinator stays with you throughout your treatment day.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if I have a concern after I fly home?</summary>
+        <p>You'll have direct WhatsApp access for 90 days post-treatment, with scheduled video check-ins at week 2, 4, and 8. If a concern requires in-person assessment, we'll arrange a complimentary follow-up visit (travel not included).</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:18px">N · SHINE CLINIC<small>CHEONGDAM · SEOUL</small></div>
+        <p>9F, K+ Medical Tower<br/>333 Dosan-daero, Gangnam-gu<br/>Seoul, South Korea<br/><br/>Diagnosis-Led Aesthetic Medicine<br/>Chief Physician Personally · International Concierge</p>
+      </div>
+      <div>
+        <h4>Treatments</h4>
+        <ul>
+          <li>Ultherapy MPT</li>
+          <li>Thermage FLX</li>
+          <li>ONDA Microwave</li>
+          <li>Potenza RF</li>
+          <li>Rejuran (PDRN)</li>
+          <li>Juvelook</li>
+          <li>N Shine Stem-Cell</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>WhatsApp · LINE</li>
+          <li>+82-2-546-1446</li>
+          <li>nshineclinic@gmail.com</li>
+          <li>K+ Tower 9F, Cheongdam</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© N Shine Clinic · Cheongdam, Seoul · International marketing partner: PortZone</div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="s-whatsapp" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="s-call" href="tel:+82-2-546-1446">Call Clinic</a>
+</div>
+
+</body>
+</html>
