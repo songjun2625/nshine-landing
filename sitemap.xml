@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://songjun2625.github.io/nshine-landing/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://songjun2625.github.io/nshine-landing/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://songjun2625.github.io/nshine-landing/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://songjun2625.github.io/nshine-landing/index-zh-CN.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://songjun2625.github.io/nshine-landing/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://songjun2625.github.io/nshine-landing/" />
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://songjun2625.github.io/nshine-landing/index-zh-CN.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://songjun2625.github.io/nshine-landing/index-en.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

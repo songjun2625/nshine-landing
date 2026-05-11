@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /select.html
+
+Sitemap: https://songjun2625.github.io/nshine-landing/sitemap.xml
